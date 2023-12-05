@@ -16,7 +16,7 @@ int main()
 {
     sf::RenderWindow window(sf::VideoMode(720, 560), "SFML Application");
 
-    std::vector<Wine> wines = ReadWinesFromFile("/Users/diegogomez/Documents/Projects/Final_Proj/path_to_modified_file1.csv");
+    std::vector<Wine> wines = ReadWinesFromFile("/path_to_modified_file1.csv");
 
     std::unordered_map<std::string, Wine> selectionMap;
 
@@ -26,12 +26,12 @@ int main()
     std::vector<Wine> priceFilteredWines;
 
     sf::Font font;
-    if (!font.loadFromFile("/Users/diegogomez/Documents/Projects/Final_Proj/AlexBrushRegular.ttf")) {
+    if (!font.loadFromFile("AlexBrushRegular.ttf")) {
         return 1;
     }
 
     sf::Font font2;
-    if (!font2.loadFromFile("/Users/diegogomez/Documents/Projects/Final_Proj/CafeFrancoise-ywMWq.ttf")) {
+    if (!font2.loadFromFile("/CafeFrancoise-ywMWq.ttf")) {
         std::cout<<"error";
     }
 
